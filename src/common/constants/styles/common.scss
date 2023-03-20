@@ -1,0 +1,9 @@
+@mixin info-block {
+  border-radius: 24px;
+}
+
+@mixin content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

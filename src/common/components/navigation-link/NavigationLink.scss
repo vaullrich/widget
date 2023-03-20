@@ -1,0 +1,25 @@
+@import '/src/common/constants/styles/index.scss';
+
+.round {
+  width: 5px;
+  height: 5px;
+  position: relative;
+  left: 40%;
+  background: white;
+  visibility: hidden;
+  transition: transform 3s;
+}
+
+.nav-link {
+  &:hover {
+    .round{
+      background: grey2;
+      visibility: visible;
+      transform: rotate(360deg);
+    }
+  }
+}
+
+.active .round {
+  visibility: visible;
+}

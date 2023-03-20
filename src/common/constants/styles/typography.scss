@@ -1,0 +1,94 @@
+@import 'size.scss';
+
+@mixin family{
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  line-height: 120%;
+}
+
+@mixin XXL-title{
+  @include family;
+  font-weight: 700;
+  font-size: 64px;
+}
+
+@mixin title{
+  @include family;
+  font-weight: 700;
+  font-size: $title;
+}
+
+@mixin L-bold{
+  @include family;
+  font-weight: 700;
+  font-size: $title;
+}
+
+@mixin L-medium{
+  @include family;
+  font-weight: 500;
+  font-size: $L;
+}
+
+@mixin L-regular{
+  @include family;
+  font-weight: 400;
+  font-size: $L;
+}
+
+@mixin XL-medium{
+  @include family;
+  font-weight: 500;
+  font-size: $XL;
+}
+
+@mixin XL-semiBold{
+  @include family;
+  font-weight: 600;
+  font-size: $XL;
+}
+
+@mixin M-bold{
+  @include family;
+  font-weight: 700;
+  font-size: $M;
+}
+
+@mixin M-regular{
+  @include family;
+  font-weight: 400;
+  font-size: $M;
+}
+
+@mixin S-regular{
+  @include family;
+  font-weight: 400;
+  font-size: $S;
+}
+
+@mixin XS-medium{
+  @include family;
+  font-weight: 500;
+  font-size: $XS;
+}
+
+@mixin XS-regular{
+  @include family;
+  font-weight: 500;
+  font-size: $XS;
+}
+
+@mixin S-medium{
+  @include family;
+  font-weight: 500;
+  font-size: $S;
+}
+
+@mixin XXS-regular{
+  @include family;
+  font-weight: 400;
+  font-size: $XXS;
+}
+
+
+

@@ -1,0 +1,18 @@
+.navBar {
+  display: flex;
+    align-items: flex-start;
+    padding: 8px 24px;
+    width: 78px;
+    height: 36px;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 24px;
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+  }
+}

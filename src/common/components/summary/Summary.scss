@@ -1,0 +1,99 @@
+@import '/src/common/constants/styles/index.scss';
+
+.summary {
+  @include info-block;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 16px;
+  gap: 10px;
+  max-width: 100%;
+  
+  &__info {
+    display: flex;
+    flex-flow: row wrap;
+
+    .date {
+      order: 1;
+      margin-left: auto
+    }
+  }
+
+  &__hourly {
+    background: rgba(255,255,255, 0.1);
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__atmosphere {
+    background: rgba(255,255,255, 0.07);
+  }
+
+
+}
+
+.summary__days{
+  display: flex;
+  flex: 100%;
+  background: transparent;
+  padding: 0;
+
+  .summary__content {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .summary__days .summary__content {
+    width: calc(100% - 10px);
+  }
+
+  .summary__content{
+    flex-wrap: wrap;
+    gap: 1px;
+
+    .day-pill{
+      max-width: 60px;
+
+      img {
+        width: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .summary{
+    .summary__content{
+      width: calc(100% - 30px);
+      gap: 5px;
+
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .summary__content{
+    .day-pill__day-week, .day-pill__time, .day-pill__temp {
+      @include XXS-regular;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .summary__days .summary__content {
+    width: calc(100% - 50px);
+    
+    .day-pill{
+      max-width: 40px;
+
+      img {
+        width: 40px;
+      }
+  }
+  }
+}

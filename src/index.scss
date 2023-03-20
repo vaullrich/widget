@@ -1,0 +1,28 @@
+@import 'src/common/constants/styles/index.scss';
+
+@mixin info-block {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 24px;
+}
+
+body {
+  @include L-regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: white;
+  min-height: 100vh;
+
+  background: linear-gradient(180deg, #2359B0 0%, #2D72E2 90%);
+}
+
+#root {
+  max-width: 1366px;
+  min-width: 320px;
+  margin: auto 10px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

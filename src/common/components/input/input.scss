@@ -1,0 +1,45 @@
+@import '/src/common/constants/styles/index.scss';
+
+#search {
+  box-sizing: border-box;
+  padding: 8px 16px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid $grey4;
+  border-radius: 24px;
+  color: $grey3;
+  @include S-regular;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &::placeholder, &.active:focus, &:focus {
+    color: $white;
+  }
+
+  &::placeholder {
+    color: $grey3;
+  }
+
+  &:focus-visible {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid $white;
+    outline: transparent;
+
+    &:focus {
+      border-color: $grey4;
+      outline: 0;
+      box-shadow: 0 0 0 0.3rem rgba(158, 158, 158, 0.25);
+    }
+  }
+
+  // &:hover {
+  //   background: rgba(255, 255, 255, 0.1);
+  //   border: 1px solid $white;
+  //   outline: transparent;
+  // }
+}
+
+@media (max-width: 420px) {
+  #search {
+    @include XXS-regular;
+  }
+}

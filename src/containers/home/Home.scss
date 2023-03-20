@@ -1,0 +1,56 @@
+@import '/src/common/constants/styles/index.scss';
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+
+  .current-summary{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    max-width: 100%;
+    gap: 10px;
+  }
+
+    .day-weather {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 100%;
+  }
+ 
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px 16px;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+@media (min-width: 1200px) {
+  .home-content {
+    .day-weather {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .summary__atmosphere{
+    .details{
+      width: calc(100% - 30px);
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  .details, .detail_block__data, .summary__info {
+    @include XS-regular;
+  }
+}

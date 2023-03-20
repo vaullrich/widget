@@ -1,0 +1,26 @@
+@import '/src/common/constants/styles/typography.scss';
+
+.hourly-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__time {
+    @include XS-medium;
+  }
+
+  &__temp {
+    @include L-medium;
+  }
+}
+
+@media (max-width: 440px) {
+  .hourly-info{
+    .hourly-info__temp, .hourly-info__time {
+      @include XXS-regular;
+    }
+    img{
+      width: 35px;
+    }
+  }
+}

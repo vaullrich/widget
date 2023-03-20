@@ -1,0 +1,15 @@
+@import '/src/common/constants/styles/typography.scss';
+
+.detail_block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  &__text {
+    @include S-regular;
+  }
+
+  &__data {
+    @include M-bold;
+  }
+}

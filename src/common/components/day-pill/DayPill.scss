@@ -1,0 +1,28 @@
+@import '/src/common/constants/styles/typography.scss';
+
+.day-pill {
+  border-radius: 24px;
+  border: medium none;
+  background: rgba(255,255,255, 0.1);
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+
+  &__day-week, &__time {
+    @include  S-regular;
+  }
+
+  &__temp {
+    @include XS-regular;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+  }
+}

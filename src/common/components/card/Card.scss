@@ -1,0 +1,94 @@
+@import "src/common/constants/styles/typography.scss";   
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+
+  .details{
+    gap: 50px;
+  }
+
+  .info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 26px;
+    flex: 1 1 100%;
+
+    &__temperature {
+      @include XXL-title;
+    }
+
+    &__icon {
+      width: 151px;
+      height: 130px;
+    }
+
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    &__temperatures {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 16px;
+    }
+  }
+
+  .city-name {
+    @include title;
+  }
+}
+
+@media (min-width: 1200px) {
+  .card {
+    flex: 1 1 520px;
+  }
+}
+
+@media (max-width: 440px) {
+  .card {
+    .details{
+      gap: 20px;
+      @include XS-regular;  
+    }
+
+    .info{
+      gap:5px;
+      flex-direction: column;
+      align-items: center
+    }
+    .info__inner {
+      align-items: center;
+
+    }
+
+    .current_info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+     .info__temperature{
+      @include title;
+    }
+
+    .info__icon {
+      width: 100px;
+      height: 88px;
+    }
+  }
+}
+
